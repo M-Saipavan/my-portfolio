@@ -1,0 +1,298 @@
+/*
+Color palette
+https://coolors.co/f9c6fa-f7e3af-f3eec3-483d3f-986c6a
+#f9c6fa - Pink lavender
+#f7e3af - peach
+#f3e3af - Lemon chiffon (light orange)
+#483d3f - Van dyke (brownish purple)
+#986c6a - Rose taupe (dark matte red)
+
+custom color palettes:
+#f7fff7 - almost white
+#343434 - dark grey - almost black
+#2f3061 - blue dark
+#ffe66d - yellow
+#a1c6d7 - blue light
+
+
+---------- new color palette ------------------
+https://coolors.co/c9fbff-c2fcf7-85bdbf-57737a-040f0f - new color palette
+#c9fbff - mint green
+#c2fcf7 - Celeste (dark mint green)
+#85bdbf - tiffany blue (matte blue)
+#57737a - payne's grey (mix of dark matte blue and gray)
+#040f0f - rich black (dark teal black)
+----------
+*/
+
+/*Global styles
+-----------------------------------------------*/
+
+/*the box model fix______________*/
+html{
+  box-sizing: border-box;
+}
+*,*:before,*:after{
+  box-sizing: inherit;
+}
+/**----------------------------------*/
+body{
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+  margin:auto auto;
+}
+a{
+  color: #ffe66d;
+}
+a:hover{
+  text-decoration: none;
+}
+h1{
+  font-size: 82px;
+  line-height: 1.25;
+
+}
+h2{
+  font-size: 40px;
+}
+h4{
+  font-size: 35px;
+}
+h1 , h2 , h4{
+  font-family: "Caveat", cursive;
+  font-weight: 400;
+  margin: 0;
+
+}
+.content-wrap{
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+.divider > section:last-of-type{
+  border-style: none;
+}
+
+/*Proile
+-----------------------------------------------*/
+header{
+  background: #534B52;
+  color: #f7fff7;
+
+}
+
+/*Education
+-----------------------------------------------*/
+.education{
+  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-size: cover ;
+  background-position: top right ;
+  padding-bottom: 100px;
+}
+.education p, .education h3 {
+  width: 60%;
+}
+
+
+/*Projects
+-----------------------------------------------*/
+.projects{
+  /* background: #f7fff7; */
+  background: url(../images/annie-spratt-unsplash.jpg) no-repeat center/100% 100%;
+  /* background-image: url(../images/thumbnail-2.jpg); */
+
+}
+
+.projects a{
+  color: #2f3061;
+  outl
+}
+
+.projects .btn{
+  color: #f7fff7;
+  font-size: 1em;
+  background: #2f3061;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+.projects .btn:hover{
+  background: rgba(47, 48, 97, 80%);
+}
+.projects .btn:focus{
+  outline
+}
+.project-item {
+  overflow: auto;
+}
+
+.project-item .project-container{
+  height: auto;
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.project-item h3{
+  margin-top: 0px;
+}
+/*Education
+-----------------------------------------------*/
+.education{
+
+}
+
+/*Internships
+-----------------------------------------------*/
+.internships{
+  background: #a1c6d7;
+}
+
+/*Workshops
+-----------------------------------------------*/
+.workshops{
+  background: #f7e3af;
+}
+
+
+
+
+/*Certifications
+-----------------------------------------------*/
+.certifications{
+  background: #d4d6b9; /* pearl */
+  clear: both;
+  overflow: auto;
+}
+.certifications .certificate{
+  display: inline-grid;
+  padding: 5px 10px 10px 10px;
+}
+.certifications img {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.certifications img:hover {
+  float: none;
+  width: 310px;
+}
+.certifications img:active {
+  float: none;
+  image-resolution: from-image;
+}
+.python:hover{
+    width: 270px;
+}
+.certificate b::before {
+    content: "› ";  /* Checkmark bullet */
+    font-size: 1.35em;
+    color: black;
+}
+
+
+/*Technical skills
+-----------------------------------------------*/
+.tskills{
+  background: #d1caa1;   /* sage   */
+}
+.italic{
+  font-size: 0.75em;
+}
+
+/*Skills
+-----------------------------------------------*/
+.skills{
+
+  background: #84b59f; /* cambridge blue */
+}
+
+/*Languages
+-----------------------------------------------*/
+.languages{
+
+  background: #7180ac;  /* glacious blue */
+}
+
+/*contact info
+-----------------------------------------------*/
+footer,footer a{
+  background: #3f3f50; /* charcoal (blue) */
+  color: #f7fff7; /* cinerous */
+  /* d34f73 - blush (pink)
+  dbbea1 - tan (white) */
+}
+.contact-list{
+  list-style: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/*Responsive
+-----------------------------------------------*/
+@media screen and (min-width:750px) {
+  header , footer {
+    text-align: center;
+  }
+
+  .project-item img{
+    float: left;
+    margin-right: 20px;
+    text-align: center;
+  }
+  .project-item .project-container{
+    height: auto;
+    width: 100%;
+    float: left;
+    margin-top: 0px;
+  }
+  .workshop-item{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 20px;
+  }
+  .contact-list{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  h1{
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
